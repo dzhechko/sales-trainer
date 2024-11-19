@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Sales Trainer
 
-## Getting Started
+Веб-приложение для тренировки навыков продаж с использованием искусственного интеллекта.
 
-First, run the development server:
+## 🚀 Демо
 
+Посетите [demo.example.com](https://demo.example.com) чтобы увидеть приложение в действии.
+
+## ✨ Возможности
+
+- 🎯 Тренировка навыков продаж в реальном времени с AI-собеседником
+- 📊 Мгновенный анализ и обратная связь
+- 📈 Отслеживание прогресса и метрик
+- 🔄 Возможность загрузки существующих разговоров
+- 👥 Масштабируемое решение для команд
+
+## 🛠 Технологии
+
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Radix UI](https://www.radix-ui.com/)
+- [SynthFlow AI](https://synthflow.ai)
+
+## 📋 Требования
+
+- Node.js 18.0 или выше
+- npm или yarn
+- Современный веб-браузер с поддержкой WebRTC
+
+## 🚀 Установка и запуск
+
+1. Клонируйте репозиторий:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/ai-sales-trainer.git
+cd ai-sales-trainer
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Установите зависимости:
+```bash
+npm install
+# или
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Создайте файл `.env.local` и добавьте необходимые переменные окружения:
+```env
+DEBUG_MODE=false
+# Другие переменные окружения
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Запустите проект в режиме разработки:
+```bash
+npm run dev
+# или
+yarn dev
+```
 
-## Learn More
+## 🏗 Структура проекта
 
-To learn more about Next.js, take a look at the following resources:
+```
+sales-trainer/
+├── app/                    # Основные страницы приложения
+├── components/             # React компоненты
+│   ├── ui/                # UI компоненты
+│   └── ...                # Другие компоненты
+├── lib/                   # Утилиты и константы
+└── public/                # Статические файлы
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 Основные страницы
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `/` - Главная страница
+- `/conversation` - Страница тренировки
+- `/results` - Страница результатов
 
-## Deploy on Vercel
+## 🔄 Навигация
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Главная страница**:
+   - Кнопка "Get Demo" → Открывает модальное окно для записи на демонстрацию
+   - Кнопка "Start Practice Now" → Открывает форму регистрации
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Страница тренировки**:
+   - Взаимодействие с AI через голосовой интерфейс
+   - Загрузка существующих разговоров
+   - Кнопка "Stop Conversation" → Переход на страницу результатов
+
+## 🚀 Деплой
+
+Проект оптимизирован для деплоя на [Vercel](https://vercel.com):
+
+1. Создайте аккаунт на Vercel
+2. Подключите репозиторий
+3. Настройте переменные окружения
+4. Vercel автоматически определит конфигурацию Next.js
+
+## 🤝 Вклад в проект
+
+Мы приветствуем ваш вклад в проект! Пожалуйста:
+
+1. Форкните репозиторий
+2. Создайте ветку для ваших изменений
+3. Внесите изменения
+4. Создайте Pull Request
+
+## 📝 Лицензия
+
+MIT License - см. [LICENSE.md](LICENSE.md)
+
+## 📧 Контакты
+
+- Email: jechkov.dmitry@gmail.com
+- Telegram: @djdim
+
+## 🙏 Благодарности
+
+- [SynthFlow AI](https://synthflow.ai) за предоставление API для голосового AI
+- Всем контрибьюторам проекта
