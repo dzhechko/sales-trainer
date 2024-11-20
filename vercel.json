@@ -1,9 +1,6 @@
 {
   "version": 2,
   "buildCommand": "next build",
-  "installCommand": "npm install",
-  "framework": "nextjs",
-  "env": {
-    "NEXT_PUBLIC_DEBUG_MODE": "false"
-  }
+  "installCommand": "npm install --no-audit --no-fund",
+  "framework": "nextjs"
 } 
